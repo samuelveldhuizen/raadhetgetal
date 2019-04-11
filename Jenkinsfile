@@ -63,13 +63,13 @@ pipeline {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    nexusUrl: 'my.nexus.address',
-                    groupId: 'com.example',
-                    version: version,
-                    repository: 'RepositoryName',
-                    credentialsId: 'CredentialsId',
+                    nexusUrl: 'localhost:8081',
+                    groupId: 'com.sam',
+                    version: 1.0,
+                    repository: 'RaadHetGetal',
+                    credentialsId: '291bdd7f-a44e-49dc-ba4b-6ee90d4b7ce8',
                     artifacts: [
-        [artifactId: projectName,
+        [artifactId: RaadHetGetal,
          classifier: '',
          file: 'my-service-' + version + '.jar',
          type: 'jar']
