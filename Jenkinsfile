@@ -25,7 +25,7 @@ pipeline {
                     nexusUrl: 'localhost:8081',
                     groupId: 'com.sam',
                     version: 1.0,
-                    repository: 'RaadHetGetal',
+                    repository: '/#browse/browse/assets:maven-snapshots',
                     credentialsId: '291bdd7f-a44e-49dc-ba4b-6ee90d4b7ce8',
                     artifacts: [
         [artifactId: RaadHetGetal,
