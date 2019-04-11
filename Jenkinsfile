@@ -28,8 +28,8 @@ pipeline {
                     repository: '/#browse/browse/assets:maven-snapshots',
                     credentialsId: '291bdd7f-a44e-49dc-ba4b-6ee90d4b7ce8',
                     artifacts: [
-        [artifactId: RaadHetGetal,
-         classifier: 'App',
+        [artifactId: App,
+         classifier: '',
          file: 'my-service-' + version + '.jar',
          type: 'jar']
     ]
